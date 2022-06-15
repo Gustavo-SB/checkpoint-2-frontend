@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #121214;
+  color: #e6e6e6;
+}
+
+h1, h2, h3, span, strong {
+  font-weight: bold;
+}
+
+header {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background: #202024;
+}
+
+.header-container {
+  width: 100%;
+  max-width: 1080px;
+  height: 100%;
+}
+
+.header-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div-log img {
+  width: 64px;
+}
+
+.logo {
+  color: #e6e6e6;
+  padding: 20px 0;
+}
+
+nav {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 1rem;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+.nav-button {
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: none; 
+  text-decoration: none;
+  background-color: #8257E6;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background 0.2s;
+}
+
+.nav-button:hover {
+  border: 2px solid #8257E6;
+  background: transparent;
+  cursor: pointer;
+}
+
+main {
+  width: 100%;
+  max-width: 1080px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section {
+  width: 100%;
+  max-width: 425px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.curiosities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  width: 100%;
+  max-width: 300px;
+  background-color: #202024;
+  border-radius: 4px;
+  margin: 20px 0;
+  transform: translateY(10px);
+
+  transition: transform 0.2s;
+}
+
+.card-img {
+  width: 100%;
+  height: 200px;
+  background-color: #121214;
+  border-radius: 4px 4px 0 0;
+}
+
+.card-title {
+  padding: 10px 0;
+  margin: 0 10px;
+}
+
+.card-p {
+  padding-bottom: 10px;
+  margin: 0 10px;
+  text-align: justify;
+}
+
+
+.card-footer {
+  width: 100%;
+  height: 10px;
+  
+  background-color: #202024;
+  border-radius: 0 0 4px 4px;
+
+  transition: background-color 0.2s;
+  transition: border-radius 0.2s;
+}
+
+.card:hover {
+  transform: translateY(0);
+}
+
+.card:hover .card-footer {
+  background-color: #8257E6;
+  border-radius: 0;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-content {
+  width: 100%;
+  max-width: 1080px;
+  height: 300px;
+  padding: 20px 0;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  justify-content: center;
+  background: #202024;
+}
+
+.footer-container {
+  width: 100%;
+  max-width: 1080px;
+}
+
+.footer-content {
+  width: 100%;
+  height: 100%;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-button {
+  padding: 20px;
+  margin-top: -10px;
+  background: transparent;
+  border: none;
+  transform: translateY(10px);
+
+  transition: filter 0.2s;
+  transition: transform 0.2s;
+}
+
+.icon-button:hover {
+  filter: brightness(90%);
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.link {
+  color: #e6e6e6;
+  text-decoration: none;
+}
+
+.img-linkedin {
+  width: 75px;
+  height: 64px;
+}
+
+.footer-copyright {
+  padding: 20px 0;
+}
+
+@media (min-width: 426px) {
+  .header-content {
+    max-width: 1080px;
+    padding: 0 20px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  nav {
+    max-width: 500px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-button {
+    max-width: 150px;
+  }
+
+  section {
+    max-width: 1080px;
+  }
+
+  .curiosities {
+    align-items: unset;
+  }
+
+  .curiosities-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    justify-content: center;
+  }
+
+  .card {
+    justify-content: center;
+  }
+
+  .video-title {
+    width: 100%;
+    text-align: start !important;
+  }
+
+  .video-content {
+    height: 500px;
+  }
+}
