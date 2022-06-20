@@ -29,6 +29,10 @@ h1, h2, h3, span, strong {
   font-weight: bold;
 }
 
+h5 {
+  font-weight: normal;
+}
+
 header {
   width: 100%;
   height: 100%;
@@ -59,6 +63,8 @@ header {
 .logo {
   color: #e6e6e6;
   padding: 20px 0;
+  width: 135px;
+  height: 160px;
 }
 
 nav {
@@ -70,6 +76,7 @@ nav {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  font-weight: bold;
 }
   
 .nav-button {
@@ -78,19 +85,20 @@ nav {
   border-radius: 4px;
   border: none; 
   text-decoration: none;
-  background-color: #8257E6;
-  color: #e6e6e6;
+  background-color: #31bd5b;
+  color: #202024;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center;  
 
   transition: background 0.2s;
 }
 
 .nav-button:hover {
-  border: 2px solid #8257E6;
+  border: 2px solid #31bd5b;
   background: transparent;
   cursor: pointer;
+  color: white;
 }
 
 main {
@@ -149,12 +157,13 @@ section {
 .card-title {
   padding: 10px 0;
   margin: 0 10px;
+  color: #31bd5b;
 }
 
 .card-p {
   padding-bottom: 10px;
   margin: 0 10px;
-  text-align: justify;
+  text-align: left;  
 }
 
 
@@ -174,7 +183,7 @@ section {
 }
 
 .card:hover .card-footer {
-  background-color: #8257E6;
+  background-color: #31bd5b;
   border-radius: 0;
 }
 
@@ -268,6 +277,13 @@ footer {
 
   .curiosities {
     align-items: unset;
+  }
+
+  .curiosities-title {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    color: #31bd5b;
   }
 
   .curiosities-content {
