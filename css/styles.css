@@ -242,6 +242,9 @@ footer {
 
 .footer-copyright {
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media (min-width: 426px) {
@@ -275,6 +278,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
     justify-content: center;
+    align-items: center;
   }
 
   .card {
@@ -288,5 +292,11 @@ footer {
 
   .video-content {
     height: 500px;
+  }
+
+  .footer-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
   }
 }
