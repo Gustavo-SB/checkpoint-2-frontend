@@ -9,6 +9,7 @@
     font-size: 93.75%;
   }
 }
+
 @media (max-width: 720px) {
   html {
     font-size: 87.5%;
@@ -23,9 +24,15 @@ body {
   font-family: 'Roboto', sans-serif;
   background: #121214;
   color: #e6e6e6;
+  width: auto;
+  height: auto;
 }
 
-h1, h2, h3, span, strong {
+h1,
+h2,
+h3,
+span,
+strong {
   font-weight: bold;
 }
 
@@ -78,20 +85,20 @@ nav {
   align-items: center;
   font-weight: bold;
 }
-  
+
 .nav-button {
   width: 100%;
   height: 40px;
   border-radius: 4px;
-  border: none; 
+  border: none;
   text-decoration: none;
   background-color: #31bd5b;
   color: #202024;
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
 
-  transition: background 0.2s;
+  transition: background 0.5s;
 }
 
 .nav-button:hover {
@@ -163,14 +170,13 @@ section {
 .card-p {
   padding-bottom: 10px;
   margin: 0 10px;
-  text-align: left;  
+  text-align: left;
 }
-
 
 .card-footer {
   width: 100%;
   height: 10px;
-  
+
   background-color: #202024;
   border-radius: 0 0 4px 4px;
 
