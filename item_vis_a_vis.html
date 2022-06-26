@@ -4,29 +4,35 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Fun.Box | Vis a Vis</title>
+
+
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Custom styles for this template -->
         <link rel="stylesheet" href="css/custom_item.css">
     </head>
 
     <body>
-    <header class="container-fluid p-0 sticky-top">
+    <header class="container-fluid p-0 sticky-top d-grid">
+
         <nav class="navbar container-fluid bg-dark py-1 px-5 d-flex">
-            <a class="navbar-brand nav-item" href="#">
+            <a class="navbar-brand nav-item m-2" href="#">
                 <img src="https://github.com/Gustavo-SB/checkpoint-2-frontend/blob/main/assets/img/Logo_Fun.Box.png?raw=true" alt="" width=100hw height=100hv>
             </a>
-            <div class="nav-item gap-2 d-md-flex justify-content-md-end">
+            <div class="nav-item gap-2 d-sm-flex justify-content-md-end">
                 <a href="index.html">
-                    <button class="btn btn-outline-success me-2" type="button">Home</button>
+                    <button class="btn btn-outline-success m-2" type="button">Home</button>
                 </a>
-                <a href="index.html">
-                    <button class="btn btn-outline-success me-2" type="button">Catálogo</button>
+                <a href="index_area_logada.html">
+                    <button class="btn btn-outline-success m-2" type="button">Catálogo</button>
                 </a>
-                <a href="index.html">
-                    <button class="btn btn-outline-success me-2" type="button">Sobre</button>
+                <a href="#anc-footer">
+                    <button class="btn btn-outline-success m-2" type="button">Sobre</button>
                 </a>
                 <a href="login-modal.html">
-                    <button class="btn btn-outline-success me-2" type="button">Login</button>
+                    <button class="btn btn-warning m-2" type="button">Login</button>
                 </a>
             </div>
         </nav>
@@ -40,13 +46,19 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
+                <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
+                </a>
             </div>
             <div class="carousel-item">
-            <img src="img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
+                <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
+                </a>
             </div>
             <div class="carousel-item">
-            <img src="img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
+                <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
+                    <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
+                </a>
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -65,13 +77,30 @@
             STRANGER THINGS
             </div>
             <div class="col pt-2">
-            <div class="bg-light w-100">
-                <img src="img/icons/star.svg" alt="estrela 1">
-                <img src="img/icons/star.svg" alt="estrela 2">
-                <img src="img/icons/star.svg" alt="estrela 3">
-                <img src="img/icons/star.svg" alt="estrela 4">
-                <img src="img/icons/star.svg" alt="estrela 5">
-            </div>
+                <div class="container d-flex justify-content-start mt-200">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="stars">
+                                <form action="">
+                                    <input class="star star-5" id="star-5" type="radio" name="star"/>
+                                    <label class="star star-5" for="star-5"></label>
+                                
+                                    <input class="star star-4" id="star-4" type="radio" name="star"/>
+                                    <label class="star star-4" for="star-4"></label>
+                                
+                                    <input class="star star-3" id="star-3" type="radio" name="star"/>
+                                    <label class="star star-3" for="star-3"></label>
+                                
+                                    <input class="star star-2" id="star-2" type="radio" name="star"/>
+                                    <label class="star star-2" for="star-2"></label>
+                                
+                                    <input class="star star-1" id="star-1" type="radio" name="star"/>
+                                    <label class="star star-1" for="star-1"></label>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
             </div>
         </div>
         <div class="row">
@@ -83,23 +112,39 @@
             <div class="col">
                 <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title">Diretor(es)</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h5 class="card-header">Criadores</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                                Matt Duffer
+                                <a href="https://www.imdb.com/name/nm1819972/?ref_=tt_ov_wr" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
+                            </li>
+                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                                Ross Duffer
+                                <a href="https://www.imdb.com/name/nm1819973/?ref_=tt_ov_wr" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
+            
             <div class="col">
                 <div class="card text-center">
                     <div class="card-body">
-                        <h5 class="card-title">Escritor(es)</h5>
-                        <!-- <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
-                        <a href="#" class="card-link">Card link</a>
-                        <a href="#" class="card-link">Another link</a>
+                        <h5 class="card-header">Elenco Principal</h5>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                                Millie Bobby Brown
+                                <a href="https://www.imdb.com/name/nm5611121/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
+                            </li>
+                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                                Finn Wolfhard
+                                <a href="https://www.imdb.com/name/nm6016511/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
+                            </li>
+                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                                Winona Ryder
+                                <a href="https://www.imdb.com/name/nm0000213/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -113,8 +158,58 @@
             </div>
         </div>
     </main>
-    <footer>
-
+    <footer class="container-fluid bg-dark">
+        <div class="row py-5">
+            <div class="col">
+                <div class="card text-start bg-transparent text-bg-secondary border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Adriano Guimarães</h5>
+                        <p class="card-text fw-lighter text-secondary">Responsável pelo desenvolvimento de ...</p>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="pe-2" src="assets/img/icons/linkedin.svg" alt="linkedin icon">
+                        </a>
+                        <a href="https://github.com/guimaraesadriano" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/icons/github.svg" alt="github icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center bg-transparent text-bg-secondary border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Gustavo Silva Barbosa</h5>
+                        <p class="card-text fw-lighter text-secondary">Responsável pelo desenvolvimento de ...</p>
+                        <a href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/" target="_blank" rel="noopener noreferrer">
+                            <img class="pe-2" src="assets/img/icons/linkedin.svg" alt="linkedin icon">
+                        </a>
+                        <a href="https://github.com/Gustavo-SB" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/icons/github.svg" alt="github icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-end bg-transparent text-bg-secondary border-0">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedro Simões Soares</h5>
+                        <p class="card-text fw-lighter text-secondary">Responsável pelo desenvolvimento de ...</p>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <img class="pe-2" src="assets/img/icons/linkedin.svg" alt="linkedin icon">
+                        </a>
+                        <a href="https://github.com/pss-ctd" target="_blank" rel="noopener noreferrer">
+                            <img src="assets/img/icons/github.svg" alt="github icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5">
+            <div class="col text-secondary fw-light text-center">
+                .:. DH CTD .::. Front-end I .::. Checkpoint 2 .::. desenvolvido em 2022 .:.
+                <p>Make with ❤️ Grupo 5</p>
+            </div>
+        </div>
+        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
