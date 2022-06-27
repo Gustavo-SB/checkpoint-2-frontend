@@ -87,3 +87,32 @@ body{
     font-family: FontAwesome;
   
   }
+
+  .nav-button {
+    width: 100%;
+    width: 100px;
+    height: 40px;
+    border-radius: 4px;
+    margin: 0 0.5rem;
+    border: none;
+    text-decoration: none;
+    background-color: #31bd5b;
+    color: #202024;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    transition: background 0.5s;
+  }
+  
+  .nav-button:hover {
+    border: 2px solid #31bd5b;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+  }
+
+  .img-banner {
+  width: 1024;
+  height: 350;
+  }

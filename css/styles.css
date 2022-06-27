@@ -70,7 +70,7 @@ header {
 .logo {
   color: #e6e6e6;
   padding: 20px 0;
-  width: 135px;
+  width: 120px;
   height: 160px;
 }
 
@@ -102,6 +102,30 @@ nav {
 
 .nav-button:hover {
   border: 2px solid #31bd5b;
+  background: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-button-login {
+  width: 100%;
+  width: 100px;
+  height: 40px;
+  border-radius: 4px;
+  margin: 0 0.5rem;
+  border: none;
+  text-decoration: none;
+  background-color: #cce889;
+  color: #202024;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transition: background 0.5s;
+}
+
+.nav-button-login:hover {
+  border: 2px solid #cce889;
   background: transparent;
   cursor: pointer;
   color: white;
