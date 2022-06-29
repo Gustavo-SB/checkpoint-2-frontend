@@ -1,5 +1,5 @@
 body {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     /* background-color: darkgray; */
     max-height: 100vh;
 
@@ -23,11 +23,14 @@ body{
   
   div.stars {
   
-    width: 270px;
+    width: 100%;
   
     display: inline-flexbox;
+
+    justify-content: start;
   
   }
+
   
   
   input.star { display: none; }
@@ -36,7 +39,7 @@ body{
   
   label.star {
   
-    float: right;
+    float: left;
   
     padding: 10px;
   
@@ -86,4 +89,28 @@ body{
   
     font-family: FontAwesome;
   
+  }
+
+
+  @media (max-width: 375px) {
+    div.stars {
+      justify-content: flex-start;
+
+    }
+
+    label.star {
+  
+      float: left;
+    
+      padding: 10px;
+    
+      font-size: 15px;
+    
+      /* color: #4A148C; */
+      color: black;
+    
+      transition: all .2s;
+    
+    }
+
   }
