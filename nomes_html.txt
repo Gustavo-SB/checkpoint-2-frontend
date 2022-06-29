@@ -1,9 +1,0 @@
-item_stranger_things.html
-item_la_casa_de_papel.html
-item_mr_robot.html
-item_the_boys.html
-item_vis_a_vis.html
-item_vinganca_sabor.html
-index.html
-index_area_logada.html
-login-modal.html
