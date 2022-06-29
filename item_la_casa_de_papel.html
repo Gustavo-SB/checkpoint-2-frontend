@@ -1,220 +1,258 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Fun.Box | La Casa de Papel</title>
+<html lang="pt-br">
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
-        <!-- Custom styles for this template -->
-        <link rel="stylesheet" href="css/custom_item.css">
-    </head>
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <body>
-        <header>
-            <div class="container-xl">
-              <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
-                <a href="./index.html" class="navbar-brand">
-                  <img id="logo" src="./assets/img/logo/Logo_Fun.Box.png" alt="Fun.Box">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
-                  <div class="navbar-nav">
-                    <a href="./index_area_logada.html" class="nav-item nav-link" id="home-menu">Home</a>
-                    <a href="./index_area_logada.html" class="nav-item nav-link" id="catalog-menu">Catálogo</a>
-                    <a href="about.html" class="nav-item nav-link" id="about-menu">Sobre</a>
-                    <a href="#" class="nav-item nav-link" id="login-menu" style="display: none">Login</a>
-                  </div>
-                </div>
-              </nav>
-            </div>
-        </header>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
 
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
-                </a>
-            </div>
-            <div class="carousel-item">
-                <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
-                    <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100" alt="Imagem de Stranger Things">
-                </a>
-            </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/custom_item.css">
+
+  <link rel="icon" type="image/x-icon" href="./assets/img/logo/Logo_Fun.Box.png" />
+
+  <title>Fun.Box | La Casa de Papel</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-xl">
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <a href="./index.html" class="navbar-brand">
+          <img id="logo" src="./assets/img/logo/Logo_Fun.Box.png" alt="Fun.Box">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links"
+          aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a href="./index_area_logada.html" class="nav-item nav-link" id="home-menu">Home</a>
+            <a href="./index_area_logada.html" class="nav-item nav-link" id="catalog-menu">Catálogo</a>
+            <a href="#" class="nav-item nav-link" id="login-menu" style="display: none">Login</a>
+          </div>
+        </div>
+      </nav>
     </div>
+  </header>
 
-    <main class="container-fluid px-5 m-0">
-        <div class="row">
-            <div class="col-12 pt-3 fs-1 fw-bolder">
-            STRANGER THINGS
-            </div>
-            <div class="col pt-2">
-                <div class="container justify-content-start mt-200">
-                    <div class="row">
-                        <div class="col">
-                            <div class="stars">
-                                <form action="">
-                                    <input class="star star-5" id="star-5" type="radio" name="star"/>
-                                    <label class="star star-5" for="star-5"></label>
-                                
-                                    <input class="star star-4" id="star-4" type="radio" name="star"/>
-                                    <label class="star star-4" for="star-4"></label>
-                                
-                                    <input class="star star-3" id="star-3" type="radio" name="star"/>
-                                    <label class="star star-3" for="star-3"></label>
-                                
-                                    <input class="star star-2" id="star-2" type="radio" name="star"/>
-                                    <label class="star star-2" for="star-2"></label>
-                                
-                                    <input class="star star-1" id="star-1" type="radio" name="star"/>
-                                    <label class="star star-1" for="star-1"></label>
-                                </form>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <p class="py-4">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ab blanditiis hic debitis praesentium eum impedit minima non? Dolorem, officiis ducimus magni aspernatur cum id? Deserunt facilis tempore id corrupti? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit sequi dicta at deserunt quidem officia, perferendis, eligendi, eveniet quae voluptatem ad accusamus aliquam suscipit. Dolorum aliquam sint animi corrupti?
-            </p>
-        </div>
-        <div class="row py-2 pb-5">
+  <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100"
+            alt="Imagem de Stranger Things">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100"
+            alt="Imagem de Stranger Things">
+        </a>
+      </div>
+      <div class="carousel-item">
+        <a href="https://www.imdb.com/title/tt4574334/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/img/item_stranger_things/stranger-things-painel.jpg" class="d-block w-100"
+            alt="Imagem de Stranger Things">
+        </a>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainSlider"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <main>
+    <div class="container-fluid px-5 m-0">
+    <div class="row">
+      <div class="col-12 pt-3 fs-1 fw-bolder">
+        STRANGER THINGS
+      </div>
+      <div class="col pt-2">
+        <div class="container justify-content-start mt-200">
+          <div class="row">
             <div class="col">
-                <div class="card mt-2 text-center">
-                    <div class="card-body">
-                        <h5 class="card-header">Criadores</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
-                                Matt Duffer
-                                <a href="https://www.imdb.com/name/nm1819972/?ref_=tt_ov_wr" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
-                            </li>
-                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
-                                Ross Duffer
-                                <a href="https://www.imdb.com/name/nm1819973/?ref_=tt_ov_wr" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="col">
-                <div class="card mt-2 text-center">
-                    <div class="card-body">
-                        <h5 class="card-header">Elenco Principal</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
-                                Millie Bobby Brown
-                                <a href="https://www.imdb.com/name/nm5611121/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
-                            </li>
-                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
-                                Finn Wolfhard
-                                <a href="https://www.imdb.com/name/nm6016511/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
-                            </li>
-                            <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
-                                Winona Ryder
-                                <a href="https://www.imdb.com/name/nm0000213/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer" class="card-link">IMDb</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="card border-light mb-3 px-0 m-0">
-                <h5 class="card-header">Trailer</h5>
-                <div class="card-body">
-                    <iframe class="w-100" height="500rem" src="https://www.youtube.com/embed/YqIcy5d72WA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-container">
-          <div class="footer-content">
-            <div class="footer-nav">
-              <div class="footer-cards">
-                <div class="footer-card">
-                  <p class="footer-card-title">Adriano Guimarães</p>
-                  <div>
-                    <button class="icon-button">
-                      <a class="link" href="https://www.linkedin.com/in/adriano-guimaraes">
-                        <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
-                      </a>
-                    </button>
-                    <button class="icon-button">
-                      <a class="link" href="https://github.com/guimaraesadriano">
-                        <img src="./assets/img/logo/github.svg" alt="github" />
-                      </a>
-                    </button>
-                  </div>
-                </div>
-                <div class="footer-card">
-                  <p class="footer-card-title">Gustavo da Silva Barbosa</p>
-                  <div>
-                    <button class="icon-button">
-                      <a class="link" href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/">
-                        <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
-                      </a>
-                    </button>
-                    <button class="icon-button">
-                      <a class="link" href="https://github.com/Gustavo-SB">
-                        <img src="./assets/img/logo/github.svg" alt="github" />
-                      </a>
-                    </button>
-                  </div>
-                </div>
-                <div class="footer-card">
-                  <p class="footer-card-title">Pedro Simões</p>
-                  <div class="footer-card-img">
-                    <button class="icon-button">
-                      <a class="link" href="https://www.linkedin.com/">
-                        <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
-                      </a>
-                    </button>
-                    <button class="icon-button">
-                      <a class="link" href="https://github.com/pss-ctd">
-                        <img src="./assets/img/logo/github.svg" alt="github" />
-                      </a>
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-copyright">
-                <p>Make with ❤️</p>
+              <div class="stars">
+                <form action="">
+                  <input class="star star-5" id="star-5" type="radio" name="star" />
+                  <label class="star star-5" for="star-5"></label>
+
+                  <input class="star star-4" id="star-4" type="radio" name="star" />
+                  <label class="star star-4" for="star-4"></label>
+
+                  <input class="star star-3" id="star-3" type="radio" name="star" />
+                  <label class="star star-3" for="star-3"></label>
+
+                  <input class="star star-2" id="star-2" type="radio" name="star" />
+                  <label class="star star-2" for="star-2"></label>
+
+                  <input class="star star-1" id="star-1" type="radio" name="star" />
+                  <label class="star star-1" for="star-1"></label>
+                </form>
               </div>
             </div>
-            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+    <div class="row">
+      <p class="py-4">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta ab blanditiis hic debitis praesentium eum
+        impedit minima non? Dolorem, officiis ducimus magni aspernatur cum id? Deserunt facilis tempore id corrupti?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit sequi dicta at deserunt quidem officia,
+        perferendis, eligendi, eveniet quae voluptatem ad accusamus aliquam suscipit. Dolorum aliquam sint animi
+        corrupti?
+      </p>
+    </div>
+    <div class="row py-2 pb-5">
+      <div class="col">
+        <div class="card mt-2 text-center">
+          <div class="card-body">
+            <h5 class="card-header">Criadores</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                Matt Duffer
+                <a href="https://www.imdb.com/name/nm1819972/?ref_=tt_ov_wr" target="_blank" rel="noopener noreferrer"
+                  class="card-link">IMDb</a>
+              </li>
+              <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                Ross Duffer
+                <a href="https://www.imdb.com/name/nm1819973/?ref_=tt_ov_wr" target="_blank" rel="noopener noreferrer"
+                  class="card-link">IMDb</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    </body>
+      <div class="col">
+        <div class="card mt-2 text-center">
+          <div class="card-body">
+            <h5 class="card-header">Elenco Principal</h5>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                Millie Bobby Brown
+                <a href="https://www.imdb.com/name/nm5611121/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer"
+                  class="card-link">IMDb</a>
+              </li>
+              <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                Finn Wolfhard
+                <a href="https://www.imdb.com/name/nm6016511/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer"
+                  class="card-link">IMDb</a>
+              </li>
+              <li class="list-group-item card-subtitle mb-2 text-muted d-inline">
+                Winona Ryder
+                <a href="https://www.imdb.com/name/nm0000213/?ref_=tt_ov_st" target="_blank" rel="noopener noreferrer"
+                  class="card-link">IMDb</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="card mb-3 px-0 m-0" id="iframe">
+        <h5 class="card-header">Trailer</h5>
+        <div class="card-body">
+          <iframe class="w-100" height="500rem" src="https://www.youtube.com/embed/YqIcy5d72WA"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  </main>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-nav">
+          <div class="footer-cards">
+            <div class="footer-card">
+              <p class="footer-card-title">Adriano Guimarães</p>
+              <div>
+                <button class="icon-button">
+                  <a class="link" href="https://www.linkedin.com/in/adriano-guimaraes">
+                    <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
+                  </a>
+                </button>
+                <button class="icon-button">
+                  <a class="link" href="https://github.com/guimaraesadriano">
+                    <img src="./assets/img/logo/github.svg" alt="github" />
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="footer-card">
+              <p class="footer-card-title">Gustavo da Silva Barbosa</p>
+              <div>
+                <button class="icon-button">
+                  <a class="link" href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/">
+                    <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
+                  </a>
+                </button>
+                <button class="icon-button">
+                  <a class="link" href="https://github.com/Gustavo-SB">
+                    <img src="./assets/img/logo/github.svg" alt="github" />
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="footer-card">
+              <p class="footer-card-title">Pedro Simões</p>
+              <div class="footer-card-img">
+                <button class="icon-button">
+                  <a class="link" href="https://www.linkedin.com/">
+                    <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
+                  </a>
+                </button>
+                <button class="icon-button">
+                  <a class="link" href="https://github.com/pss-ctd">
+                    <img src="./assets/img/logo/github.svg" alt="github" />
+                  </a>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p>Make with ❤️</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>
