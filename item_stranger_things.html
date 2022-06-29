@@ -15,28 +15,26 @@
     </head>
 
     <body>
-    <header class="container-fluid p-0 sticky-top d-grid">
-
-        <nav class="navbar container-fluid bg-dark py-1 px-5 d-flex">
-            <a class="navbar-brand nav-item m-2" href="#">
-                <img src="https://github.com/Gustavo-SB/checkpoint-2-frontend/blob/main/assets/img/Logo_Fun.Box.png?raw=true" alt="" width=100hw height=100hv>
-            </a>
-            <div class="nav-item gap-2 d-sm-flex justify-content-md-end">
-                <a href="index.html">
-                    <button class="btn btn-outline-success m-2" type="button">Home</button>
+        <header>
+            <div class="container-xl">
+              <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+                <a href="./index.html" class="navbar-brand">
+                  <img id="logo" src="./assets/img/logo/Logo_Fun.Box.png" alt="Fun.Box">
                 </a>
-                <a href="index_area_logada.html">
-                    <button class="btn btn-outline-success m-2" type="button">Catálogo</button>
-                </a>
-                <a href="#anc-footer">
-                    <button class="btn btn-outline-success m-2" type="button">Sobre</button>
-                </a>
-                <a href="login-modal.html">
-                    <button class="btn btn-warning m-2" type="button">Login</button>
-                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+                  <div class="navbar-nav">
+                    <a href="./index_area_logada.html" class="nav-item nav-link" id="home-menu">Home</a>
+                    <a href="./index_area_logada.html" class="nav-item nav-link" id="catalog-menu">Catálogo</a>
+                    <a href="about.html" class="nav-item nav-link" id="about-menu">Sobre</a>
+                    <a href="#" class="nav-item nav-link" id="login-menu" style="display: none">Login</a>
+                  </div>
+                </div>
+              </nav>
             </div>
-        </nav>
-    </header>
+        </header>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -110,7 +108,7 @@
         </div>
         <div class="row py-2 pb-5">
             <div class="col">
-                <div class="card text-center">
+                <div class="card mt-2 text-center">
                     <div class="card-body">
                         <h5 class="card-header">Criadores</h5>
                         <ul class="list-group list-group-flush">
@@ -128,7 +126,7 @@
             </div>
             
             <div class="col">
-                <div class="card text-center">
+                <div class="card mt-2 text-center">
                     <div class="card-body">
                         <h5 class="card-header">Elenco Principal</h5>
                         <ul class="list-group list-group-flush">
@@ -158,58 +156,63 @@
             </div>
         </div>
     </main>
-    <footer class="container-fluid bg-dark" id="anc-footer">
-        <div class="row py-5">
-            <div class="col">
-                <div class="card text-start bg-transparent text-bg-secondary border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Adriano Guimarães</h5>
-                        <p class="card-text fw-lighter text-secondary">Responsável pelo desenvolvimento de ...</p>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                            <img class="pe-2" src="assets/img/icons/linkedin.svg" alt="linkedin icon">
-                        </a>
-                        <a href="https://github.com/guimaraesadriano" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/icons/github.svg" alt="github icon">
-                        </a>
-                    </div>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-nav">
+              <div class="footer-cards">
+                <div class="footer-card">
+                  <p class="footer-card-title">Adriano Guimarães</p>
+                  <div>
+                    <button class="icon-button">
+                      <a class="link" href="https://www.linkedin.com/in/adriano-guimaraes">
+                        <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
+                      </a>
+                    </button>
+                    <button class="icon-button">
+                      <a class="link" href="https://github.com/guimaraesadriano">
+                        <img src="./assets/img/logo/github.svg" alt="github" />
+                      </a>
+                    </button>
+                  </div>
                 </div>
+                <div class="footer-card">
+                  <p class="footer-card-title">Gustavo da Silva Barbosa</p>
+                  <div>
+                    <button class="icon-button">
+                      <a class="link" href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/">
+                        <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
+                      </a>
+                    </button>
+                    <button class="icon-button">
+                      <a class="link" href="https://github.com/Gustavo-SB">
+                        <img src="./assets/img/logo/github.svg" alt="github" />
+                      </a>
+                    </button>
+                  </div>
+                </div>
+                <div class="footer-card">
+                  <p class="footer-card-title">Pedro Simões</p>
+                  <div class="footer-card-img">
+                    <button class="icon-button">
+                      <a class="link" href="https://www.linkedin.com/">
+                        <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
+                      </a>
+                    </button>
+                    <button class="icon-button">
+                      <a class="link" href="https://github.com/pss-ctd">
+                        <img src="./assets/img/logo/github.svg" alt="github" />
+                      </a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <p>Make with ❤️</p>
+              </div>
             </div>
-            <div class="col">
-                <div class="card text-center bg-transparent text-bg-secondary border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Gustavo Silva Barbosa</h5>
-                        <p class="card-text fw-lighter text-secondary">Responsável pelo desenvolvimento de ...</p>
-                        <a href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/" target="_blank" rel="noopener noreferrer">
-                            <img class="pe-2" src="assets/img/icons/linkedin.svg" alt="linkedin icon">
-                        </a>
-                        <a href="https://github.com/Gustavo-SB" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/icons/github.svg" alt="github icon">
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card text-end bg-transparent text-bg-secondary border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Pedro Simões Soares</h5>
-                        <p class="card-text fw-lighter text-secondary">Responsável pelo desenvolvimento de ...</p>
-                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
-                            <img class="pe-2" src="assets/img/icons/linkedin.svg" alt="linkedin icon">
-                        </a>
-                        <a href="https://github.com/pss-ctd" target="_blank" rel="noopener noreferrer">
-                            <img src="assets/img/icons/github.svg" alt="github icon">
-                        </a>
-                    </div>
-                </div>
             </div>
         </div>
-        <div class="row pb-5">
-            <div class="col text-secondary fw-light text-center">
-                .:. DH CTD .::. Front-end I .::. Checkpoint 2 .::. desenvolvido em 2022 .:.
-                <p>Make with ❤️ Grupo 5</p>
-            </div>
-        </div>
-        
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

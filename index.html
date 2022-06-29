@@ -8,8 +8,18 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 
+  <!-- CSS Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css" />
 
   <title>.: FUN.BOX :.</title>
@@ -17,163 +27,275 @@
 
 <body>
   <header>
-    <div class="header-container">
-      <div class="header-content">
-        <img src="assets/img/logo/Logo_Fun.Box.png" alt="Logo" class="logo" />
-        <nav>
-          <a class="nav-button" href="index.html">Home</a>
-          <a class="nav-button" href="#items">Catálogo</a>
-          <a class="nav-button" href="#anc-footer">Sobre</a>
-          <a class="nav-button" href="login-modal.html">Login</a>
-        </nav>
-      </div>
+    <div class="container-xl">
+      <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <a href="#" class="navbar-brand">
+          <img id="logo" src="./assets/img/logo/Logo_Fun.Box.png" alt="Fun.Box">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-links" aria-controls="navbar-links" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbar-links">
+          <div class="navbar-nav">
+            <a href="#" class="nav-item nav-link" id="home-menu">Home</a>
+            <a href="#catalog-area" class="nav-item nav-link" id="catalog-menu">Catálogo</a>
+            <a href="about.html" class="nav-item nav-link" id="about-menu">Sobre</a>
+            <a href="./login-modal.html" class="nav-item nav-link" id="login-menu">Login</a>
+          </div>
+        </div>
+      </nav>
     </div>
   </header>
 
   <main>
-    <section class="banner">
-    </section>
-
-    <section class="items" id="items">
-      <h2 class="items-title">Catálogo</h2>
-      <div class="items-content">
-        <div class="card">
-          <a href="login-modal.html" target="_blank" rel="noopener noreferrer">
-            <img class="card-img"
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJgRAb_FIyqfaThMcmAMxAoyoMPsJuv6Dzcg&usqp=CAU"
-              alt="Imagem de Stranger Things" />
-          </a>
-            <h3 class="card-title">Stranger Things</h3>
-            <h5>
-              <p class="card-p">
-                Quando um garoto desaparece, a cidade toda participa nas buscas. Mas o que encontram são segredos, forças
-                sobrenaturais e uma menina.
-              </p>
-              <p class="card-p">
-                <span>Estrelando:</span> Winona Ryder, David Harbour, Millie Bobby Brown
-              </p>
-              <p class="card-p">
-                <span>Gêneros:</span> Séries de ficção científica
-              </p>
-            </h5>
-            <div class="card-footer"></div>
-          
+    <div class="container-fluid">
+      <div id="mainSlider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="2"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="3"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="4"></button>
+          <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="5"></button>
         </div>
-        <div class="card">
-          <a href="login-modal.html" target="_blank" rel="noopener noreferrer">
-            <img class="card-img" src="https://tm.ibxk.com.br/2022/01/07/07110554272104.jpg" />
-          </a>
-          <h3 class="card-title">The Boys</h3>
-          <h5>
-            <p class="card-p">
-              É uma visão irreverente do que acontece quando super-heróis, que são tão populares quanto
-              celebridades, abusam de seus superpoderes ao invés de usá-los para o bem.
-            </p>
-            <p class="card-p">
-              <span>Estrelando:</span> Karl Urban, Jack Quaid, Antony Starr
-            </p>
-            <p class="card-p">
-              <span>Gêneros:</span> Ficção científica, Comédia, Ação
-            </p>
-          </h5>
-          <div class="card-footer"></div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./assets/img/item_stranger_things/st4.jpeg" alt="stranger things">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Stranger Things 4 Temporada</h2>
+              <p>A quarta temporada da série já está disponível para ser maratonada</p>
+              <button class="main-btn">
+                <a href="#catalog-area">Ver mais</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/item_the_boys/the-boys.jpg" alt="the boys">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>The Boys 3 Temporada</h2>
+              <p>Novos episódios toda sexta-feira</p>
+              <button class="main-btn">
+                <a href="#catalog-area">Ver mais</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/item_mr_robot/mr-robot-full-hd-poster.jpg" alt="mr robot">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Mr Robot</h2>
+              <p>A quarta temporada da série já está disponível para ser maratonada</p>
+              <button class="main-btn">
+                <a href="#catalog-area">Ver mais</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/item_la_casa_de_papel/la-casa-de-papel.jpg" alt="la casa de papel">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>La Casa de Papel</h2>
+              <p>A quarta temporada da série já está disponível para ser maratonada</p>
+              <button class="main-btn">
+                <a href="#catalog-area">Ver mais</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/item_vis_a_vis/vis-a-vis.jpg" alt="vis a vis">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Vis a Vis</h2>
+              <p>A quarta temporada da série já está disponível para ser maratonada</p>
+              <button class="main-btn">
+                <a href="#catalog-area">Ver mais</a>
+              </button>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./assets/img/item_vinganca_sabor/cherry-flavor.jpg" alt="cherry flavor">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Vingança Sabor Cereja</h2>
+              <p>A quarta temporada da série já está disponível para ser maratonada</p>
+              <button class="main-btn">
+                <a href="#catalog-area">Ver mais</a>
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="card">
-          <a href="login-modal.html" target="_blank" rel="noopener noreferrer">
-            <img class="card-img"
-            src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/84b24359960c53fc83af12127ea67e202489750fc7d0ec3fe7306ef612b2972f._UR1920,1080_RI_UX400_UY225_.jpg"
-            alt="Imagem de Sociedade Hacker" />
-          </a>
-          <h3 class="card-title">Sociedade Hacker</h3>
-          <h5>
-            <p class="card-p">
-              É um suspense de tecnologia que segue Elliot, um jovem programador, que trabalha como engenheiro de
-              cibersegurança de dia e como hacker justiceiro à noite.
-            </p>
-            <p class="card-p">
-              <span>Estrelando:</span> Martin Wallstrom, Rami Malek, Portia Doubleday
-            </p>
-            <p class="card-p">
-              <span>Gêneros:</span> Drama, Suspense
-            </p>
-          </h5>
-          <div class="card-footer"></div>
-        </div>
-        <div class="card">
-          <a href="login-modal.html" target="_blank" rel="noopener noreferrer">        
-            <img class="card-img"
-            src="https://occ-0-1722-1723.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQ6D7kMK4z7LVmh-IhfZ8GfW0esK2JeHPLbtFPNmMGbtuIFR47ISdGSF7hg7cpW3lW_Gv1PDiD8bXXJpzJ83MiYxhxpC3H3gs--_TbmAjuxHIt4G2kYVMPuSeQ_Gxdb54Zu7aA.jpg?r=c9f"
-            alt="Imagem de La casa de papel" />
-          </a>
-          <h3 class="card-title">La casa de papel</h3>
-          <h5>
-            <p class="card-p">
-              Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia para realizar
-              um plano. Será o maior roubo da história, ou uma missão em vão?
-            </p>
-            <p class="card-p">
-              <span>Estrelando:</span> Úrsula Corberó, Álvaro Morte, Itziar Ituño
-            </p>
-            <p class="card-p">
-              <span>Gêneros:</span> Drama, Suspense, Ficção
-            </p>
-            </p>
-          </h5>
-          <div class="card-footer"></div>
-        </div>
-        <div class="card">
-          <a href="login-modal.html" target="_blank" rel="noopener noreferrer">
-            <img class="card-img" src="https://i.ytimg.com/vi/N08KRAPzsHU/maxresdefault.jpg" alt="Imagem de Vis a vis" />
-          </a>
-          <h3 class="card-title">Vis a vis</h3>
-          <h5>
-            <p class="card-p">
-              Manipulada pelo homem por quem se apaixonou, essa moça cometeu um crime. Condenada à prisão, ela agora
-              deve aprender a viver num ambiente hostil e impiedoso.
-            </p>
-            <p class="card-p">
-              <span>Estrelando:</span> Najwa Nimri, Maggie Civantos, Itziar Castro
-            </p>
-            <p class="card-p">
-              <span>Gêneros:</span> Drama, Suspense, Ficção
-            </p>
-            </p>
-          </h5>
-          <div class="card-footer"></div>
-        </div>
-        <div class="card">
-          <a href="login-modal.html" target="_blank" rel="noopener noreferrer">
-            <img class="card-img"
-            src="https://occ-0-826-185.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABYwG7CYMZ8a9XYaH5TILk9q-v6Dy6RHCoaY6iBoZ2FcVeHQJkon2aiqZrbH_O_BnQ3cdyh8nYCmSw4-DZv3IUFugNV2LvpSeiM_wieUZJq0pIUy5ZsSw8TdjS7oHx68hiD82Bg.jpg?r=f98"
-            alt="Imagem de Vingança Sabor Cereja" />
-          </a>
-          <h3 class="card-title">Vingança Sabor Cereja</h3>
-          <h5>
-            <p class="card-p">
-              Uma cineasta vai para Hollywood no começo dos anos 1990 para fazer seu filme, mas se depara com um mundo
-              alucinante de sexo, magia, vingança… e gatinhos.
-            <p class="card-p">
-              <span>Estrelando:</span> Rosa Salazar,Eric Lange,Catherine Keener
-            <p class="card-p">
-              <span>Criação:</span> Lenore Zion, Nick Antosca
-          </h5>
-          </p>
-          </p>
-          </p>
-          <div class="card-footer"></div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div id="catalog-area">
+        <div class="container">
+          <div class="d-flex justify-content-center">
+            <h3 class="title-section">Catálogo</h3>
+          </div>
+          <div class="row row-cols-3">
+            <div class="col">
+              <div class="card">
+                <a href="./login-modal.html">
+                  <div class="img">
+                    <img class="card-img" src="./assets/img/item_stranger_things/st4.jpeg" alt="stranger things" />
+                  </div>
+                  <div class="content-card">
+                    <h3 class="card-title">Stranger Things</h3>
+                    <h5>
+                      <p class="card-p">
+                        Passada na década de 80, na cidade fictícia de Hawkings, Stranger Things conta a história de um
+                        garoto que desaparece e dos eventos paranormais que se passam em torno desse acontecimento.
+                      </p>
+                      <p class="card-p">
+                        <span>Gêneros:</span> Horror, Thriller, Drama
+                      </p>
+                    </h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="./login-modal.html">
+                  <div class="img">
+                    <img class="card-img" src="./assets/img/item_the_boys/the-boys.jpg" alt="the boys" />
+                  </div>
+                  <div class="content-card">
+                    <h3 class="card-title">The Boys</h3>
+                    <h5>
+                      <p class="card-p">
+                        É uma visão irreverente do que acontece quando super-heróis, que são tão populares quanto
+                        celebridades, abusam de seus superpoderes ao invés de usá-los para o bem.
+                      </p>
+                      <p class="card-p">
+                        <span>Gêneros:</span> Super-heróis, Comédia, Ação
+                      </p>
+                    </h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="./login-modal.html">
+                  <div class="img">
+                    <img class="card-img" src="./assets/img/item_mr_robot/mr-robot-card.jpg" alt="mr robot" />
+                  </div>
+                  <div class="content-card">
+                    <h3 class="card-title">Mr. Robot</h3>
+                    <h5>
+                      <p class="card-p">
+                        É um suspense de tecnologia que segue Elliot, um jovem programador, que trabalha como engenheiro
+                        de
+                        cibersegurança de dia e como hacker justiceiro à noite.
+                      </p>
+                      <p class="card-p">
+                        <span>Gêneros:</span> Drama, Thriller
+                      </p>
+                    </h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="./login-modal.html">
+                  <div class="img">
+                    <img class="card-img" src="./assets/img/item_la_casa_de_papel/la-casa-de-papel-card.jpg" alt="la casa de papel" />
+                  </div>
+                  <div class="content-card">
+                    <h3 class="card-title">La casa de papel</h3>
+                    <h5>
+                      <p class="card-p">
+                        Oito ladrões se trancam com reféns na Casa da Moeda da Espanha. Seu líder manipula a polícia
+                        para
+                        realizar
+                        um plano. Será o maior roubo da história, ou uma missão em vão?
+                      </p>
+                      <p class="card-p">
+                        <span>Gêneros:</span> Roubo, Drama
+                      </p>
+                      </p>
+                    </h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="./login-modal.html">
+                  <div class="img">
+                    <img class="card-img" src="./assets/img/item_vis_a_vis/vis-a-vis-card.jpg" alt="vis a vis" />
+                  </div>
+                  <div class="content-card">
+                    <h3 class="card-title">Vis a vis</h3>
+                    <h5>
+                      <p class="card-p">
+                        Manipulada pelo homem por quem se apaixonou, essa moça cometeu um crime. Condenada à prisão, ela
+                        agora
+                        deve aprender a viver num ambiente hostil e impiedoso.
+                      </p>
+                      <p class="card-p">
+                        <span>Gêneros:</span> Drama, Crime, Thriller
+                      </p>
+                      </p>
+                    </h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <a href="./login-modal.html">
+                  <div class="img">
+                    <img class="card-img" src="./assets/img/item_vinganca_sabor/cherry-flavor-card.jpg" alt="vingança sabor cereja" />
+                  </div>
+                  <div class="content-card">
+                    <h3 class="card-title">Vingança Sabor Cereja</h3>
+                    <h5>
+                      <p class="card-p">
+                        Uma cineasta vai para Hollywood no começo dos anos 1990 para fazer seu filme, mas se depara com
+                        um
+                        mundo
+                        alucinante de sexo, magia, vingança… e gatinhos.
+                        <p class="card-p">
+                          <span>Gêneros:</span> Horror, Drama
+                        </p>
+                    </h5>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-
+    </div>
   </main>
-  <footer id="anc-footer">
+
+  <footer>
     <div class="footer-container">
       <div class="footer-content">
         <div class="footer-nav">
           <div class="footer-cards">
             <div class="footer-card">
-              <p class="footer-card-title">Primeiro</p>
-              <p class="footer-card-p">Responsável por...</p>
+              <p class="footer-card-title">Adriano Guimarães</p>
+              <div>
+                <button class="icon-button">
+                  <a class="link" href="https://www.linkedin.com/in/adriano-guimaraes">
+                    <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
+                  </a>
+                </button>
+                <button class="icon-button">
+                  <a class="link" href="https://github.com/guimaraesadriano">
+                    <img src="./assets/img/logo/github.svg" alt="github" />
+                  </a>
+                </button>
+              </div>
+            </div>
+            <div class="footer-card">
+              <p class="footer-card-title">Gustavo da Silva Barbosa</p>
               <div>
                 <button class="icon-button">
                   <a class="link" href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/">
@@ -188,32 +310,15 @@
               </div>
             </div>
             <div class="footer-card">
-              <p class="footer-card-title">Segundo</p>
-              <p class="footer-card-p">Responsável por...</p>
-              <div>
-                <button class="icon-button">
-                  <a class="link" href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/">
-                    <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
-                  </a>
-                </button>
-                <button class="icon-button">
-                  <a class="link" href="https://github.com/Gustavo-SB">
-                    <img src="./assets/img/logo/github.svg" alt="github" />
-                  </a>
-                </button>
-              </div>
-            </div>
-            <div class="footer-card">
-              <p class="footer-card-title">Terceiro</p>
-              <p class="footer-card-p">Responsável por...</p>
+              <p class="footer-card-title">Pedro Simões</p>
               <div class="footer-card-img">
                 <button class="icon-button">
-                  <a class="link" href="https://www.linkedin.com/in/gustavo-da-silva-barbosa-a909b0205/">
+                  <a class="link" href="https://www.linkedin.com/">
                     <img class="img-linkedin" src="./assets/img/logo/linkedin.svg" alt="linkedin" />
                   </a>
                 </button>
                 <button class="icon-button">
-                  <a class="link" href="https://github.com/Gustavo-SB">
+                  <a class="link" href="https://github.com/pss-ctd">
                     <img src="./assets/img/logo/github.svg" alt="github" />
                   </a>
                 </button>
@@ -225,6 +330,10 @@
           </div>
         </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+  </script>
 </body>
 
 </html>
